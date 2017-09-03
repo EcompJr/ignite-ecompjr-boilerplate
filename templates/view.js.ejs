@@ -1,0 +1,21 @@
+//import liraries
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+import colors from "../../config/colors";
+import Images from "../../config/images";
+import styles from "./styles";
+
+// create a component
+class <%= props.name %> extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text><%= props.name %></Text>
+      </View>
+    );
+  }
+}
+
+export default <%= props.name %>;
+
