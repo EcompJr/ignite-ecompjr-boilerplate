@@ -38,7 +38,7 @@ module.exports = async function (context) {
   await ignite.copyBatch(context, jobs, props)
 
   const appNavFilePath = `${process.cwd()}/app/containers/index.js`
-  const importToAdd = `import ${containerName} from './containers/${containerName}';`
+  const importToAdd = `import ${containerName} from './${containerName}';`
   const exportToAdd = `  ${containerName},`
   if (!filesystem.exists(appNavFilePath)) {
     const msg = `No '${appNavFilePath}' file found.  Can't insert screen.`
