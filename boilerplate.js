@@ -7,7 +7,7 @@
  * 
  */
 
-const REACT_NATIVE_VERSION = '0.42.0'
+const REACT_NATIVE_VERSION = '0.47.2'
 
 /**
  * Let's install.
