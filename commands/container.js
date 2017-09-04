@@ -1,5 +1,5 @@
 // @cliDescription  Example SsscassioBoilerplate command
-// Generates a "screen".
+// Generates a "container".
 
 module.exports = async function (context) {
   // Learn more about context: https://infinitered.github.io/gluegun/#/context-api.md
@@ -17,8 +17,8 @@ module.exports = async function (context) {
   const containerName = name.endsWith('Container') ? name : `${name}Container`
   const props = { name: containerName }
   
-  // Copies the `screen.js.ejs` in your plugin's templates folder
-  // into app/screens/${name}.js.
+  // Copies the `container.js.ejs` in your plugin's templates folder
+  // into app/containers/${name}.js.
   const jobs = [
     {
       template: 'view.js.ejs',
